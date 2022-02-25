@@ -17,6 +17,10 @@ public class SetterDemoApp {
 		
 		System.out.println(theCoach.getDailyFortune());
 		
+		//呼叫新方法取得文字資料
+		System.out.println(theCoach.getEmailAddress());
+		System.out.println(theCoach.getTeam());
+		
 		//關閉context
 		context.close();
 	}

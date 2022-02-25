@@ -4,6 +4,29 @@ public class CricketCoach implements Coach {
 
 	private FortuneService fortuneService; 
 	
+	//新增新的emailAddress核team變數
+	private String emailAddress;
+	private String team;
+	
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("CrickertCoach: inside setter method - setEmailAddress");
+		this.emailAddress = emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		System.out.println("CrickertCoach: inside setter method - setTeam");
+		this.team = team;
+	}
+
+	
 	//建立一個無參數建構子
 	public CricketCoach() {
 		System.out.println("CrickertCoach: inside no-arg constructor");
