@@ -7,6 +7,10 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!-- 載入properties檔案:sport.properties -->
+	<context:property-placeholder location = "classpath:sport.properties" />
+	
+	
 	<!-- 在這裡定義Bean -->
 
 	
@@ -33,6 +37,11 @@
     	<!-- 設定setter注入 -->
     	<!-- name參數等於是省略set，像以下例子就是setFortuneService() -->
     	<property name = "fortuneService" ref = "myFortuneService" />
+    	
+    	<!-- 注入文字資料 -->
+    	<property name = "emailAddress" value = "${foo.email}"></property>
+    	<property name = "team" value = "${foo.team}"></property>
+    	
     </bean>
 </beans>
 
