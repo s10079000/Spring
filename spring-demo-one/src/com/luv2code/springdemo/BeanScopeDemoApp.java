@@ -14,6 +14,17 @@ public class BeanScopeDemoApp {
 		Coach theCoach = context.getBean("myCoach", Coach.class);
 		
 		Coach alphaCoach = context.getBean("myCoach", Coach.class);
+		
+		//確定這些bean是否相同
+		boolean result = (theCoach == alphaCoach);
+		System.out.println("\nPointing to the same Ogject: " + result);
+		
+		System.out.println("\nMemory location for theCoach: " + theCoach);
+		
+		System.out.println("\nMemory location for theCoach: " + alphaCoach + "\n");
+		
+		//關閉context
+		context.close();
 	}
 
 }
