@@ -22,5 +22,16 @@ public class TrackCoach implements Coach {
 	public String getDailyFortune() {
 		return "Just Do It: " + fortuneService.getFortune();
 	}
+	
+	
+	//新增初始化方法
+	public void doMyStratupStuff() {
+		System.out.println("TrackCoach: inside method doMyStratupStuff");
+	}
+	
+	//新增結束方法
+	public void doMyCleanupStuffYoYo() {
+		System.out.println("TrackCoach: inside method doMyCleanupStuffYoYo");
+	}
 
 }
